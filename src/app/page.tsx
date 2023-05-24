@@ -4,10 +4,8 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import ListLayout from '@/components/ListLayout'
 
 
-export const POSTS_PER_PAGE = 5
-
-
 export default async function Home() {
+  const POSTS_PER_PAGE = 5
   const posts = await getAllFilesFrontMatter('blog')
   const initialDisplayPosts = posts.slice(0, POSTS_PER_PAGE)
   const pagination = {
