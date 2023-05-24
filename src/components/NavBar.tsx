@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function NavBar() {
     return <>
         <div className="navbar bg-base-100">
@@ -6,9 +8,9 @@ export function NavBar() {
             </div>
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a>博客</a></li>
-                    <li><a>项目</a></li>
-                    <li><a>我</a></li>
+                    <li><Link href="/">Blog</Link></li>
+                    <li><Link href="/project">Project</Link></li>
+                    <li><Link href="/about">About</Link></li>
                 </ul>
             </div>
         </div>
