@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import ListLayout from '@/components/ListLayout'
 
