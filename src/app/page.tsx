@@ -5,6 +5,7 @@ import ListLayout from '@/components/ListLayout'
 
 
 export default async function Home() {
+  // console.log("Language: ", lang)
   const POSTS_PER_PAGE = 5
   const posts = await getAllFilesFrontMatter('blog')
   const initialDisplayPosts = posts.slice(0, POSTS_PER_PAGE)
