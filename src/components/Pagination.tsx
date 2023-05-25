@@ -1,4 +1,4 @@
-import Link from "next/link"
+import { Link } from "react-router-dom"
 
 export default function Pagination({ totalPages, currentPage } : { totalPages: any, currentPage: any }) {
   const prevPage = parseInt(currentPage) - 1 > 0
@@ -13,7 +13,7 @@ export default function Pagination({ totalPages, currentPage } : { totalPages: a
           </button>
         )}
         {prevPage && (
-          <Link href={currentPage - 1 === 1 ? `/blog/` : `/blog/page/${currentPage - 1}`}>
+          <Link to={currentPage - 1 === 1 ? `/blog/` : `/blog/page/${currentPage - 1}`}>
             <button rel="previous">Previous</button>
           </Link>
         )}
@@ -26,7 +26,7 @@ export default function Pagination({ totalPages, currentPage } : { totalPages: a
           </button>
         )}
         {nextPage && (
-          <Link href={`/blog/page/${currentPage + 1}`}>
+          <Link to={`/blog/page/${currentPage + 1}`}>
             <button rel="next">Next</button>
           </Link>
         )}

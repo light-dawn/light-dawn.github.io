@@ -1,10 +1,8 @@
-'use client'
-
 import { useState } from "react"
-import Link from "next/link"
+import { Link } from "react-router-dom"
 
-import formatDate from "@/lib/utils/date"
-import Pagination from "@/components/Pagination"
+import formatDate from "../utils/date"
+import Pagination from "./Pagination"
 
 
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination } 
@@ -66,7 +64,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                                     <div className="space-y-3 xl:col-span-3">
                                         <div>
                                             <h3 className="text-2xl font-bold leading-8 tracking-tight">
-                                                <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
+                                                <Link to={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
                                                     {title}
                                                 </Link>
                                             </h3>
