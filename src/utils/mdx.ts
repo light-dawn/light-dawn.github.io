@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import getAllFilesRecursively from './utils/files'
+import getAllFilesRecursively from './files'
 
 const root = process.cwd()
 

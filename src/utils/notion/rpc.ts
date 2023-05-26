@@ -27,7 +27,7 @@ export async function getError(res: Response) {
 }
 
 export function getJSONHeaders(res: Response) {
-  return JSON.stringify(res.headers.raw())
+  return JSON.stringify(res.headers.values())
 }
 
 export function getBodyOrNull(res: Response) {
