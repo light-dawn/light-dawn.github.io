@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 import MainLayout from "../layouts/MainLayout";
 import App from "../pages/App";
+import PaperPage from "../pages/PaperPage"
 import RouterSample from "../pages/RouterSample";
 import NotFound from "../pages/404";
 
@@ -16,9 +17,12 @@ export const router = createBrowserRouter([
                 element: <App></App>,
             },
             {
+                path: "paper",
+                element: <PaperPage></PaperPage>
+            },
+            {
                 path: 'router',
                 element: <RouterSample></RouterSample>,
-                
             }
         ],
         errorElement: <MainLayout><NotFound></NotFound></MainLayout>

@@ -11,7 +11,7 @@ export function NavBar() {
                 <ul className="menu menu-horizontal px-1">
                     <li key={0}><Link to="/">博客</Link></li>
                     <li key={1}><Link to="/projects">项目</Link></li>
-                    <li key={2}><Link to="/papers">论文</Link></li>
+                    <li key={2}><Link to="/paper">论文</Link></li>
                     <li key={3}><Link to="/assets">知识产权</Link></li>
                     <li key={4}><Link to="/about">关于我</Link></li>
                 </ul>
