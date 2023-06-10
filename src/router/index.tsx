@@ -17,14 +17,18 @@ export const router = createBrowserRouter([
                 element: <App></App>,
             },
             {
-                path: "paper",
-                element: <PaperPage></PaperPage>
+                index: true,
+                element: <PaperPage></PaperPage>,
+            },
+            {
+                path: 'paper', 
+                element: <PaperPage></PaperPage>,
             },
             {
                 path: 'router',
                 element: <RouterSample></RouterSample>,
             }
         ],
-        errorElement: <MainLayout><NotFound></NotFound></MainLayout>
+        errorElement: <MainLayout><NotFound></NotFound></MainLayout>,
     },
 ])
