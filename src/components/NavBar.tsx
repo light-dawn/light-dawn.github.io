@@ -5,7 +5,7 @@ export function NavBar() {
     return <>
         <div className="navbar bg-base-100">
             <div className="flex-1">
-                <a className="btn btn-ghost normal-case text-xl">{`LoNa's Tech Blogs`}</a>
+                <a className="btn btn-ghost normal-case text-xl">{`墨璇的个人主页`}</a>
             </div>
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1">
