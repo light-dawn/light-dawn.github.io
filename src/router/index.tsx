@@ -3,7 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import App from "../pages/App";
 import PaperPage from "../pages/PaperPage"
-import ActivityPage from "../pages/ActivityPage";
+import ContestPage from "../pages/ContestPage";
 import NotFound from "../pages/404";
 
 
@@ -25,8 +25,8 @@ export const router = createBrowserRouter([
                 element: <PaperPage></PaperPage>,
             },
             {
-                path: 'activity',
-                element: <ActivityPage></ActivityPage>,
+                path: 'contest',
+                element: <ContestPage></ContestPage>,
             }
         ],
         errorElement: <MainLayout><NotFound></NotFound></MainLayout>,
