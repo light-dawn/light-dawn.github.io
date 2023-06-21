@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { Carousel, initTE } from "tw-elements";
 
+import { Video } from "../components/Video";
+
 
 export function ContestPage() {
     useEffect(() => {
@@ -93,6 +95,12 @@ export function ContestPage() {
                             </div>
                         </div>
                     </div>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <Video></Video>
                 </div>
             </li>
         </ul>
