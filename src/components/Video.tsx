@@ -17,7 +17,6 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 
-// Render a YouTube video player
 export const Video: React.FC = () => {
     return (
         <ReactPlayer 
