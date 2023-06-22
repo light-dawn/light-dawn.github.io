@@ -4,6 +4,7 @@ import MainLayout from "../layouts/MainLayout";
 import App from "../pages/App";
 import PaperPage from "../pages/PaperPage"
 import ContestPage from "../pages/ContestPage";
+import PatentPage from "../pages/PatentPage";
 import NotFound from "../pages/404";
 
 
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
             {
                 path: 'contest',
                 element: <ContestPage></ContestPage>,
+            },
+            {
+                path: 'patent',
+                element: <PatentPage></PatentPage>,
             }
         ],
         errorElement: <MainLayout><NotFound></NotFound></MainLayout>,

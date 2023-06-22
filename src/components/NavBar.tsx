@@ -12,7 +12,7 @@ export function NavBar() {
                     <li key={0}><Link to="/">博客</Link></li>
                     <li key={1}><Link to="/contest">赛事</Link></li>
                     <li key={2}><Link to="/paper">论文</Link></li>
-                    <li key={3}><Link to="/assets">知识产权</Link></li>
+                    <li key={3}><Link to="/patent">知识产权</Link></li>
                     <li key={4}><Link to="/about">关于我</Link></li>
                 </ul>
             </div>
